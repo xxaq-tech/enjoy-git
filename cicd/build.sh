@@ -1,7 +1,7 @@
 #!/bin/bash
 APP_NAME=enjoy-git
-APP_PKG_DIR=custom-newhope-data-webapi/
-APP_PKG=custom-newhope-data-webapi
+APP_PKG_DIR=测试流水线/
+APP_PKG=enjoy-git
 DEST_DIR=build_dest_dir
 #参数1
 IMAGE=192.168.18.133/library/${APP_NAME}
@@ -26,7 +26,7 @@ mkdir ${DEST_DIR}
 
 #---------- 复制必要的文件到Docker构建目录 ----------
 cp -r cicd/*  ${DEST_DIR}
-cp ${APP_PKG_DIR}target/${APP_PKG}.tar.gz ${DEST_DIR}/app.tar.gz
+cp ${APP_PKG_DIR}target/${APP_PKG}.war ${DEST_DIR}/app.tar.gz
 
 #---------- 构建Docker镜像,$0为外部传入目标镜像库项目和标签路径 ----------
 rm -f docker_build_result.log
