@@ -1,4 +1,4 @@
-ARG BASE_IMAGE="192.168.18.133:20000/common/jdk:8u171"
+ARG BASE_IMAGE="192.168.80.133/library/openjdk:8-jdk-alpine"
 
 FROM $BASE_IMAGE
 MAINTAINER zhangzhi <zhangzhi@worktrans.cn>

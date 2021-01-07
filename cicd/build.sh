@@ -1,10 +1,10 @@
 #!/bin/bash
-APP_NAME=custom-newhope-data
+APP_NAME=enjoy-git
 APP_PKG_DIR=custom-newhope-data-webapi/
 APP_PKG=custom-newhope-data-webapi
 DEST_DIR=build_dest_dir
 #参数1
-IMAGE=192.168.18.133:8080/platform2/${APP_NAME}
+IMAGE=192.168.18.133/library/${APP_NAME}
 #参数2
 TAG=$(date +%Y%m%d%H%M%S)
 #TAG=lastet
