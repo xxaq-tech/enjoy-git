@@ -8,7 +8,7 @@ LABEL \
 
 ENV APP_PATH="/"
 #根目录创建app目录
-RUN mkdir $APP_PATH
+#RUN mkdir $APP_PATH
 WORKDIR  $APP_PATH
 #COPY . /app
 COPY Dockerfile \
@@ -19,9 +19,9 @@ COPY Dockerfile \
 ADD app.tar.gz  $APP_PATH
 
 #修改Dokcerfile默认shell,默认/bin/sh
-SHELL ["/bin/bash","-c"]
+#SHELL ["/bin/bash","-c"]
 #sh文件授权
-RUN chmod +x $APP_PATH/*.sh
+RUN chmod +x /*.sh
 #调试镜像文件列表信息
 RUN ls -lah
 RUN java -version
