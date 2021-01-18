@@ -6,7 +6,7 @@ LABEL \
         org.worktrans.maintainer="zhangzhi<tz826@qq.com>"  \
         org.worktrans.app.vendor="Worktrans"
 
-ENV APP_PATH="/app/"
+ENV APP_PATH="/"
 #根目录创建app目录
 RUN mkdir $APP_PATH
 WORKDIR  $APP_PATH
@@ -29,4 +29,4 @@ RUN java -version
 STOPSIGNAL SIGINT
 
 #容器启动执行命令
-CMD ["/app/run.sh"]
+CMD ["/run.sh"]
