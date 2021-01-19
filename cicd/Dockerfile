@@ -16,7 +16,7 @@ COPY Dockerfile \
       $APP_PATH
 
 #自动解压到app目录,注意最后/必须有
-ADD app.tar.gz  $APP_PATH
+cp app.jar  $APP_PATH
 
 #修改Dokcerfile默认shell,默认/bin/sh
 #SHELL ["/bin/bash","-c"]

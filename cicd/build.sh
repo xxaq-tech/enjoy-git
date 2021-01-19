@@ -26,7 +26,7 @@ mkdir ${DEST_DIR}
 
 #---------- 复制必要的文件到Docker构建目录 ----------
 cp -r cicd/*  ${DEST_DIR}
-cp  target/enjoy-git-1.0-SNAPSHOT请移除快照.war ${DEST_DIR}/app.tar.gz
+cp  target/enjoy-git-1.0-SNAPSHOT请移除快照.jar ${DEST_DIR}/app.jar
 
 #---------- 构建Docker镜像,$0为外部传入目标镜像库项目和标签路径 ----------
 rm -f docker_build_result.log
