@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 APP_NAME=enjoy-git
 APP_PKG_DIR=测试流水线/
 APP_PKG=enjoy-git

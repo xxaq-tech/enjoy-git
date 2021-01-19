@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/sh
 
 #修改hosts
 #echo "10.68.4.15 xxx.com" >> /etc/hosts
