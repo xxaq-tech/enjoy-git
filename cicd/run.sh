@@ -5,4 +5,4 @@
 
 #启动服务,${JVM_PARAM}参数可外部通过环境变量引入实际值
 #java -jar app.jar ${JVM_PARAM}
-java  -jar APP.jar
+java  -jar app.jar
